@@ -1,0 +1,3 @@
+/*! For license information please see 841.357f43ec.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkCashFlow=self.webpackChunkCashFlow||[]).push([[841],{8841:(e,t,s)=>{s.r(t),s.d(t,{startStatusTap:()=>a});var n=s(3196),o=s(3743),r=s(1811);const a=()=>{const e=window;e.addEventListener("statusTap",(()=>{(0,n.wj)((()=>{const t=e.innerWidth,s=e.innerHeight,a=document.elementFromPoint(t/2,s/2);if(!a)return;const i=(0,o.a)(a);i&&new Promise((e=>(0,r.c)(i,e))).then((()=>{(0,n.Iu)((async()=>{i.style.setProperty("--overflow","hidden"),await(0,o.s)(i,300),i.style.removeProperty("--overflow")}))}))}))}))}}}]);
+//# sourceMappingURL=841.357f43ec.chunk.js.map
