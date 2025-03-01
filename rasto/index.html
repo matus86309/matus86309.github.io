@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Firma s.r.o.</title>
+    <title>Arakis s.r.o.</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,12 +20,11 @@
   </head>
   <body>
     <div class="fixed-top">
-      <div id="navbar-center-logo" class="d-md-none"><h3 style="margin: 0">Firma s.r.o.</h3></div>
-      <div id="navbar-side-logo" class="d-none d-md-block">
-        <h4 style="margin: 0">Firma s.r.o.</h4>
+      <div id="navbar-center-logo" class="d-md-none">
+        <h3 style="margin: 0"><img src="logo-white.png" alt="logo Arakis" class="logo" /></h3>
       </div>
       <nav class="navbar navbar-expand-md bg-primary relative">
-        <div class="container" style="max-width: 50rem">
+        <div class="container" style="max-width: 50rem" style="height: 6rem">
           <!-- Proper container usage -->
           <button
             class="navbar-toggler"
@@ -39,9 +39,9 @@
               <li class="nav-item mx-4">
                 <a class="nav-link active" href="#Info">O nás</a>
               </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link active" href="#Pricing">Cenník</a>
-              </li>
+              <div id="navbar-logo" class="d-none d-md-block">
+                <img src="logo-white.png" alt="logo Arakis" class="logo" />
+              </div>
               <li class="nav-item mx-4">
                 <a class="nav-link active" href="#Contact">Kontakt</a>
               </li>
@@ -54,27 +54,28 @@
       <header>
         <div>
           <div>
-            <h1>Firma s.r.o.</h1>
+            <h1>Arakis s.r.o.</h1>
             <br />
-            Najelpšia na Slovensku
             <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
+            <br />
           </div>
+          <h2>Stavebná firma so zameraním na suchú vnútornú výstavbu</h2>
+          <!-- <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+          </p> -->
         </div>
       </header>
       <main style="text-align: center">
-        <div id="Info" class="container pt-4">
-          <h2 class="pt-5">Naše projekty</h2>
+        <div id="Info" class="container pt-5">
+          <h2 class="mt-5">Naše projekty</h2>
           <div class="row">
             <div class="info-panel col-12 col-xl-6">
-              <h3>Projekt 1</h3>
+              <h3>WESTEND GATE</h3>
               <br />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -94,7 +95,7 @@
           </div>
           <div class="row">
             <div class="info-panel col-12 col-xl-6">
-              <h3>Projekt 2</h3>
+              <h3>WESTEND PLAZA</h3>
               <br />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -114,7 +115,7 @@
           </div>
           <div class="row">
             <div class="info-panel col-12 col-xl-6">
-              <h3>Projekt 3</h3>
+              <h3>Zuckermandel</h3>
               <br />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -133,57 +134,45 @@
             </div>
           </div>
         </div>
-        <section id="Pricing" class="pt-5">
-          <h2 class="mt-3">Cenník</h2>
-          
-          <table>
-            <tbody>
-              <tr>
-                <th>Strecha</th>
-                <td>2000€</td>
-              </tr>
-              <tr>
-                <th>Altánok</th>
-                <td>400€</td>
-              </tr>
-              <tr>
-                <th>Strecha</th>
-                <td>2000€</td>
-              </tr>
-              <tr>
-                <th>Altánok</th>
-                <td>400€</td>
-              </tr>
-              <tr>
-                <th>Strecha</th>
-                <td>2000€</td>
-              </tr>
-              <tr>
-                <th>Altánok</th>
-                <td>400€</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
       </main>
       <footer id="Contact">
-        <section>
-          <h2>Kontakt</h2>
-          <br />
-          <p>
-            Tel: +421918273167<br />
-            email: email@gmail.com<br />
-            adresa: Palisady 2, 863 09 Bratislava
-          </p>
-          <h4>Kontakný formulár</h4>
-          <p>
-            <textarea id="email" draggable="false" placeholder="Napíšte nám:"></textarea>
-            <br />
-            <button>Odoslať</button>
-          </p>
-
-          <p class="pt-4">&copy; 2025 My Website. All rights reserved.</p>
-        </section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12"><h2>Kontakt</h2></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-lg-6 mt-3">
+              <h5>Ing. Ivan Goča</h5>
+              <p>
+                +421 903 445 881 <br />
+                ivan.goca@arakis.pro
+              </p>
+            </div>
+            <div class="col-lg-6 mt-3">
+              <h5>Ing. Miroslav Mešina PhD</h5>
+              <p>
+                +421 911 469 946 <br />
+                miroslav.mesina@arakis.pro
+              </p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <h3>Kancelária</h3>
+              <p>
+                Dúbravská cesta 4 <br />
+                84104 Bratislava
+              </p>
+              <img
+                src="map.jpg"
+                id="map"
+                alt="Kancelária na mape Bratislavy"
+                style="cursor: pointer"
+                onclick="location.href = 'https://www.google.com/maps/place/D%C3%BAbravsk%C3%A1+cesta+4,+841+04+Bratislava,+Slovensko/@48.1579361,17.0975617,12.92z/data=!4m6!3m5!1s0x476c8d064d071261:0x321c0f5fb9c0f593!8m2!3d48.1686359!4d17.075269!16s%2Fg%2F11kq33nyw3?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D'"
+              />
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
