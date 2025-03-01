@@ -79,7 +79,9 @@ footer {
 }
 .info-panel {
   padding: 2rem;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .info-panel > img {
   max-width: 100%;
