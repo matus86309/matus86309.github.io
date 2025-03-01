@@ -1,21 +1,45 @@
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Bootstrap modifications */
 .bg-primary {
-  --bs-primary-rgb: 151, 255, 0, !important; /* RGB format for proper usage */
+  --bs-primary-rgb: 151, 255, 0 !important; /* RGB format for proper usage */
   background-color: black !important;
   --bs-navbar-active-color: white;
 }
-.navbar-nav .nav-link:focus,
+/* .navbar-nav .nav-link:focus,
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
+} */
+.navbar-toggler-icon {
+  height: 3.9rem;
+  filter: invert(100%);
 }
-h1{
+div:not(.show) > ul > .nav-item {
+  width: 5rem;
+}
+.nav-item {
+  text-align: center;
+}
+.nav-link {
+  text-align: center;
+  padding-top: 1rem;
+}
+.row:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+/* General styles */
+h1 {
   font-size: min(20vw, 10rem);
 }
-h2{
+h2 {
   margin-top: 4rem;
   font-size: 2.5rem;
 }
-h3{
+h3 {
   margin-top: 3rem;
   font-size: 2rem;
 }
@@ -24,15 +48,16 @@ p {
   font-size: 1.4rem;
   line-height: 3rem;
 }
+img {
+  width: 100%;
+}
+
+/* Navbar */
 header p {
   max-width: 50rem;
   margin: 5rem auto 0;
 }
-.nav-link {
-  text-align: center;
-  padding-top: 1rem;
-}
-.logo{
+.logo {
   height: 3rem;
 }
 #navbar-logo {
@@ -40,51 +65,40 @@ header p {
   z-index: 999;
 }
 #navbar-center-logo {
-  width: 12rem;
-  left: calc(50vw - 6rem);
-  margin-top: 0.75rem;
+  width: 4.2rem;
+  left: calc(50vw - 2.1rem);
+  margin-top: 1.25rem;
   text-align: center;
   position: absolute;
   z-index: 999;
 }
+
+/* Main */
 #content {
   width: 100%;
   margin: 3.5rem auto 0;
   text-align: center;
 }
-
-header > img {
-  width: 100%;
-}
-
 header {
   height: 100vh;
   background-image: url("bg-pic.jpg");
-  background-size:cover;
+  background-size: cover;
   background-position: center;
 }
 header > div {
   height: 100%;
   width: 100%;
-  padding:25vh 2rem 50vh;
+  padding: 25vh 2rem 50vh;
   background: #000c;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   color: white;
 }
-table {
-  margin: 2rem auto;
-  border-collapse: collapse;
-}
-td,
-th {
-  border: 1px solid gray;
-  padding: 0.75rem 1.5rem;
-}
 
+/* Footer */
 footer {
-  padding: 4rem 2rem ;
+  padding: 4rem 2rem;
   background-color: bisque;
 }
 .info-panel {
@@ -93,13 +107,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.info-panel > img {
-  max-width: 100%;
-}
-.row:nth-child(odd){
-  flex-direction: row-reverse;
-}
-#map{
+#map {
   width: 100%;
   max-width: 50rem;
 }
