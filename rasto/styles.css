@@ -4,7 +4,6 @@ body {
 
 /* Bootstrap modifications */
 .bg-primary {
-  --bs-primary-rgb: 151, 255, 0 !important; /* RGB format for proper usage */
   background-color: black !important;
   --bs-navbar-active-color: white;
 }
