@@ -24,6 +24,9 @@ div:not(.show) > ul > .nav-item {
 .row:nth-child(odd) {
   flex-direction: row-reverse;
 }
+.row{
+  margin-bottom: 1rem;
+}
 
 /* General styles */
 h1 {
@@ -100,8 +103,9 @@ footer {
   background-color: bisque;
 }
 .info-panel {
-  padding: 2rem;
+  padding: 1rem 2rem;
   display: flex;
+  flex-direction:column;
   justify-content: center;
   align-items: center;
 }
